@@ -1,0 +1,21 @@
+import jwt from 'jsonwebtoken'
+
+const generarJWT = (datos) => jwt.sign({ id: datos.id, nombre: datos.nombre }, process.env.JWT_SECRET, { expiresIn: '1d' })
+
+// const generarJWT2 = (id) => {
+//     return token = jwt.sign({
+//         nombre: 'deybis',
+//         empresa: 'DcalP',
+//         tecnologia: 'Node.js'
+
+//     }, 'secret', {
+//         expiresIn: '1d'
+//     })
+// }
+
+const generarId = () => Math.random().toString(32).substring(2) + Date.now().toString(32);
+
+export {
+    generarId,
+    generarJWT
+} 

@@ -1,0 +1,33 @@
+npm init -y
+npm i express 
+npm i nodemon -D    o   npm i nodemon --save-dev
+#colocar "type":"module" en package.json
+npm i pug
+npm i -D tailwindcss autoprefixer postcss postcss-cli
+npx tailwindcss init -p
+
+#tailwind.config.cjs: Escanea nuestro codigo para verificar y generar las clases necesarias para nuestro proyecto y ya no nos brinda el framework completo para optimizar recursos.
+#instalar plugin pug TailwindcssIntelliSense
+
+#ORM
+npm i --save sequelize mysql2
+
+#Variable de entorno
+npm i dotenv
+
+#Validar datos para registrar en database
+npm i express-validator
+
+#encriptar password en el modelo
+npm i bcrypt
+
+#Envio de email, test
+npm i nodemailer
+
+#csrf proteccion
+npm i csurf
+
+#cookies 
+npm i cookie-parser
+
+npm i jsonwebtoken
